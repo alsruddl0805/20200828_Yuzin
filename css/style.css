@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+* {
+    color: #333;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+div#wrap {
+    width: 1200px;
+    border: 1px solid #888;
+    background-color: #f2f2f2;
+}
+
+/*header 시작*/
+
+header {
+    height: 100px;
+    display: flex;
+}
+
+#headerLogo {
+    width: 200px;
+}
+
+#headerLogo img {
+    margin-top: 25px;
+}
+
+nav {
+    width: 1000px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul#mainMenu {
+    margin: 25px 0 0 300px;
+}
+
+nav ul#mainMenu>li {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    border: 1px solid #888;
+    border-left: none;
+    background-color: #ff5050;
+}
+
+nav ul#mainMenu>li>a {
+    color: #fff;
+    background-color: #ff5050;
+}
+
+nav ul#mainMenu>li:hover {
+    background-color: #ffc000;
+}
+
+nav ul#mainMenu>li:hover>a {
+    background-color: #ffc000;
+}
+
+nav ul#mainMenu>li:first-child  {
+    border-left: 1px solid #000;
+}
+
+div#extraSubMenu {
+    width: 1198px;
+    height: 130px;
+    background-color: #ffc000;
+    position: absolute;
+    top: 66px;
+    z-index: 10;
+    display: none;
+}
+
+#extraSubMenu #subMenuArea {
+    position: relative;
+}
+
+div#extraSubMenu #subMenuArea::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#subMenuArea {
+    margin-left: 540px;
+}
+
+#extraSubMenu ul.subMenu {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    padding-left: 0px;
+}
+
+#extraSubMenu ul.subMenu a {
+    color: #fff;
+    width: 150px;
+    font-size: 17px;
+    text-align: center;
+    padding: 8px;
+    display: inline-block;
+
+}
+
+#extraSubMenu ul.subMenu a:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+/*header 종료*/
+
+/*main 시작*/
+
+main {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+
+div#fade {
+    height: 300px;
+}
+
+div#fadeFrame {
+    position: relative;
+}
+
+div#fadeFrame a {
+    position: absolute;
+/*    display: none;*/
+}
+
+div#fadeFrame a img {
+    width: 1198px;
+}
+
+div#fadeFrame a#first {
+    z-index: 3;
+}
+
+div#fadeFrame a#second {
+    z-index: 2;
+}
+
+div#fadeFrame a#third {
+    z-index: 1;
+}
+
+div#fadeFrame span {
+    width: 500px;
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#content {
+    height: 200px;
+    display: flex;
+}
+
+div#bbs,div#gal,div#go {
+    flex: 1;
+}
+
+div#bbs {
+    border-right: 1px solid #888;
+}
+
+div#bbs button {
+    border: 1px solid #aaa;
+    border-bottom: none;
+    font-size: 15px;
+    padding: 5px;
+
+    position: relative;
+    left: 15px;
+    top: 11px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+div#bbs table {
+    border: 1px solid #aaa;
+    margin-top: 10px;
+}
+
+div#bbs td {
+    font-size: 14px;
+    line-height: 33px;
+}
+
+div#gal {
+    border-right: 1px solid #888;
+}
+
+div#gal button {
+    border: 1px solid #aaa;
+    border-bottom: none;
+    font-size: 15px;
+    padding: 5px;
+
+    position: relative;
+    left: 15px;
+    top: 11px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+div#gal table {
+    width: 391px;
+    height: 152px;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+}
+
+div#gal table td img {
+    width: 120px;
+    height: 120px;
+    margin: 3px;
+}
+
+div#gal table td img:hover {
+    opacity: 0.5;
+}
+
+div#go img {
+    margin-top: 42px;
+    margin-left: 4px;
+}
+
+/*main 종료*/
+
+/*footer 시작*/
+
+footer {
+    height: 100px;
+    display: flex;
+}
+
+div#footerMenu {
+    width: 1000px;
+}
+
+div#footerMenu table {
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+div#footerMenu td {
+    line-height: 47px;
+}
+
+div#footerMenu tr:first-child td {
+    border-bottom: 1px solid #888;
+}
+
+div#footerMenu tr:first-child td {
+    text-align: center;
+}
+
+div#footerMenu td span {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+}
+
+div#footerMenu tr:last-child td {
+    text-align: center;
+}
+
+div#family {
+    width: 200px;
+    border-left: 1px solid #888;
+    text-align: center;
+}
+
+div#family select {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #888;
+    margin-top: 30px;
+    outline: none;
+}
+
+/*footer 종료*/
+
+div#modal {
+    background-color: rgba(255,255,255,0.0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: none;
+}
+
+div#modalLayer {
+    width: 500px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+div#modalLayer h2 {
+    margin-bottom: 20px;
+}
+
+div#modalLayer p {
+    line-height: 40px;
+}
+
+div#modalLayer button {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    position: relative;
+    left: 430px;
+    top: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
